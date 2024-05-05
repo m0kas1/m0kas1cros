@@ -36,14 +36,6 @@ def add_word(photo_1: str = None, photo_2: str = None, data: dict = None, cheh: 
             document.add_picture(f'img/{photo_2}.jpg', width=Inches(6))
             document.add_page_break()
 
-    # document.add_paragraph(
-    #     'Фото проблемы', style='List Bullet'
-    # )
-    # document.add_picture(f'img/{photo}.jpg', width=Inches(6))
-    # document.add_paragraph(
-    #     'Фото решения', style='List Bullet'
-    # )
-    # document.add_picture(f'img/{photo}.jpg', width=Inches(6), height=Inches(3))
     document.add_paragraph(
         data
     )
